@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  
+  # gives us a bunch of routes/links that we can use
+  resources :articles
+
   root 'pages#home' # in quotes, we specify WHERE we want this route to go to. In this case, we want the route to point to the application controller
   # next, we want a method witin the application controller, to HANDLE this request.
     # In this case, we will define a method in the application controller, and we will define the method.
